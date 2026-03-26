@@ -1,17 +1,29 @@
 # phishing_detector
 
-A new Flutter project.
+# 🛡️ PhishGuard - AI-Powered Phishing Detector
 
-## Getting Started
+A powerful Flutter application that protects users from phishing attacks by analyzing URLs, expanding shortened links, validating SSL certificates, and checking domain age.
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🔗 URL Shortener Expander
+- Detects shortened URLs (bit.ly, tinyurl, goo.gl, etc.)
+- Reveals the real destination URL
+- Alerts users about hidden malicious links
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### 🔒 SSL Certificate Validation
+- Validates SSL certificates for HTTPS websites
+- Identifies missing or invalid certificates
+- Flags insecure HTTP connections
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🌐 Domain Age Checker
+- Detects newly registered domains (common in phishing)
+- Identifies suspicious TLDs (.xyz, .top, .club, etc.)
+- Flags risky domain patterns
+
+### 🎯 Advanced Detection
+- Typosquatting detection (paypa1 → paypal)
+- Suspicious keyword detection (login, verify, secure)
+- IP address in URL detection
+- Multiple hyphen detection
+- @ symbol phishing pattern detection
